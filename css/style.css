@@ -50,6 +50,11 @@ header{
     border-radius: 10px;
     position: absolute;
     margin: 0 10px;
+    box-shadow: 2px 2px rgb(202, 202, 202);
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .mid_left{
