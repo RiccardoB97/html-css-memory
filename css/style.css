@@ -5,8 +5,69 @@
 }
 
 body{
-    width: 80%;
+    width: 800px;
     margin: auto;
-    font-family: 'Chango', cursive;
+    font-family: 'Nerko One', cursive;
     background-color: lightskyblue;
+}
+
+header{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-shadow: grey 1px 1px;
+}
+
+.container{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.top_row{
+    height: 220px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.mid_row{
+    height: 220px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.bot_row{
+    height: 220px;
+    position: relative;
+}
+
+.card{
+    height: 220px;
+    width: 180px;
+    background-image: url(../img/pattern.png);
+    background-size: 90%;
+    background-repeat: repeat;
+    border-radius: 10px;
+    position: absolute;
+    margin: 0 10px;
+}
+
+.mid_left{
+    top: 0;
+    left: 200px;
+}
+
+.mid_right{
+    top: 0;
+    right: 200px;
+}
+
+.right{
+    top: 0;
+    right: 0;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
 }
