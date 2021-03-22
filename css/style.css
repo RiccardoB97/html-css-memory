@@ -52,12 +52,13 @@ header{
     background-repeat: repeat;
     border-radius: 10px;
     float: left;
-    margin: 0 10px;
     padding: 20px;
+    margin: 0 10px;
     box-shadow: 2px 2px rgb(202, 202, 202);
     text-align: center;
     font-size: 1.5rem;
     text-shadow: 1px 1px lightgray;
+    position: relative;
 }
 
 .card:hover{
@@ -77,17 +78,57 @@ header{
     text-align: center;
 }
 
-.shown_card .baloon{
-    width: 150px;
-}
 
-.shown_card h2{
+.shown_card h3{
     color: orchid;
     text-shadow: 1px 1px lightgray;
     font-size: 2rem;
 }
+.hidden{
+    opacity: 0;
+}
 
+.card:hover{
+    background-image: none;
+}
 
+.card:hover .hidden{
+    background-color: white;
+    opacity: 1;
+}
+.tractor, .bike, .ship, .baloon, .submarine, .tram{
+    width: 150px;
+}
+
+.tractor_text{
+    color: orange;
+    text-shadow: 1px 1px lightgray;
+}
+
+.bike_text{
+    color: yellowgreen;
+    text-shadow: 1px 1px lightgray;
+}
+
+.ship_text{
+    color: blue;
+    text-shadow: 1px 1px lightgray;
+}
+
+.baloon_text{
+    color: orchid;
+    text-shadow: 1px 1px lightgray;
+}
+
+.submarine_text{
+    color: yellow;
+    text-shadow: 1px 1px lightgray;
+}
+
+.tram_text{
+    color: brown;
+    text-shadow: 1px 1px lightgray;
+}
 footer{
     text-align: center;
     margin-top: 30px;
