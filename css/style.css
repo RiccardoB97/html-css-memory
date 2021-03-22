@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 body{
     width: 800px;
@@ -26,13 +31,11 @@ header{
 
 .top_row{
     height: 220px;
-    position: relative;
     margin-bottom: 30px;
 }
 
 .mid_row{
     height: 220px;
-    position: relative;
     margin-bottom: 30px;
 }
 
@@ -48,29 +51,42 @@ header{
     background-size: 90%;
     background-repeat: repeat;
     border-radius: 10px;
-    position: absolute;
+    float: left;
     margin: 0 10px;
+    padding: 20px;
     box-shadow: 2px 2px rgb(202, 202, 202);
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px lightgray;
 }
 
 .card:hover{
+    background-color: white;
     cursor: pointer;
 }
 
-.mid_left{
-    top: 0;
-    left: 200px;
+.shown_card{
+    height: 220px;
+    width: 180px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    margin: 0 10px;
+    box-shadow: 2px 2px rgb(202, 202, 202);
+    padding: 20px;
+    text-align: center;
 }
 
-.mid_right{
-    top: 0;
-    right: 200px;
+.shown_card .baloon{
+    width: 150px;
 }
 
-.right{
-    top: 0;
-    right: 0;
+.shown_card h2{
+    color: orchid;
+    text-shadow: 1px 1px lightgray;
+    font-size: 2rem;
 }
+
 
 footer{
     text-align: center;
